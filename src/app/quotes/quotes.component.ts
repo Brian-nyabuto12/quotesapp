@@ -9,13 +9,21 @@ import { Quote } from '../quote';
 })
 export class QuotesComponent implements OnInit {
   quotes:Quote[] = [
-    new Quote (1,'Hamisi','Human spirit','The human spirit must prevail over technology to allow humans be in charge.','Albert Einstein', new Date(2019,7,12),0,0),
-    new Quote (2,'Gilbert','Technology…','Technology… the knack of so arranging  that we don’t have to experience it.','Max Frisch',new Date(2019,7,14),0,0),
-    new Quote (3,'kelvin','The great myth','The great myth of our times is that technology is communication.','Libby Larsen',new Date(2019,6,3),0,0),
-    new Quote (4,'ann','Communication','Communications tools don’t get socially interesting until they get technologically boring.','Clay Shirky',new Date(2019,7,7),0,0),
-    new Quote (5,'Charles','Code and people','Programs must be written for people to read, and only incidentally for machines to execute.','Harold Abelson',new Date(2019,7,17),0,0),
-    new Quote (6,'Alfred','Tech and life','For a list of all the ways technology has failed to improve the quality of life, please press three.','Alice Kahn',new Date(2019,7,15),0,0)
+    new Quote (1,'Hamisi','Success','Everyone can rise above their circumstances and achieve success if they are dedicated to and passionate about what they do','Nelson Mandera', new Date(2021,5,1),0,0),
+    new Quote (2,'Gilbert','Education','I believe that education is all about being excited about something. Seeing passion and enthusiasm helps push an educational message.','Steve Irwin',new Date(2021,4,14),0,0),
+    new Quote (3,'kelvin','Politics','Democracy arises out of the notion that those who are equal in any respect are equal in all respects; because men are equally free, they claim to be absolutely equal','Aristotle',new Date(2021,5,3),0,0),
+    new Quote (4,'ann','Technology','The advance of technology is based on making it fit in so that you dont really even notice it, so it is part of everyday life','Bill Gates',new Date(2021,2,17),0,0),
+    new Quote (5,'sharyn','Hardwork','Hard work is an essential element in tracking down and perfecting a strategy or in executing it','Charlie Munger',new Date(2021,3,1),0,0),
+    new Quote (6,'kamau','Dreams and Goals','Press forward. Do not stop, do not linger in your journey, but strive for the mark set before you','George Whitefield',new Date(2021,4,11),0,0)
   ];
+  displayInformation(index){
+    this.quotes[index].showInformation = !this.quotes[index].showInformation;
+  }
+  get sortQuotes() {
+    return this.quotes.sort((a, b) => {
+      return <any>new Date(b.datePosted) - <any>new Date(a.datePosted);
+    });
+  }
   constructor() { }
 
   ngOnInit(): void {
