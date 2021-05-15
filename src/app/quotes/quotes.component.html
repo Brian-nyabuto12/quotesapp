@@ -9,7 +9,7 @@
       <div class="All-cards">
         <div *ngFor='let quote of sortQuotes let i= index' class="card" style="width:24rem">
           <div class="card-body">
-            <h3 class="card-title" appQuote>{{quote.title}} {{quote.likes}}
+            <h3 class="card-title" appQuote>{{quote.title}}
               <button (click)='toggleDetails(i)'class="btn btn-Info btn-sm" id="qoute-button">more Info</button>
             </h3>
             <p class="card-text" id="param">{{quote.quote}}</p>
