@@ -1,20 +1,21 @@
-<div class="container">
+<div class="container-fluid">
   <h1>WELCOME TO QUOTE CITY</h1>
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-sm-3">
 
     </div>
 
-    <div class="col-md-8">
+    <div class="col-sm-9">
       <div class="All-cards">
-        <div *ngFor='let quote of sortQuotes:let i=index' class="card">
+        <div *ngFor='let quote of sortQuotes let i= index' class="card" style="width:24rem">
           <div class="card-body">
-            <h3 class="card-title" appQuote>{{quote.title}} {{quote.maximumlikes}}<button (onclick)='displayInformation'
-                class="btn btn-Info btn-sm" id="qoute-button">more Info</button>
+            <h3 class="card-title" appQuote>{{quote.title}} {{quote.likes}}
+              <button (click)='toggleDetails(i)'class="btn btn-Info btn-sm" id="qoute-button">more Info</button>
             </h3>
             <p class="card-text" id="param">{{quote.quote}}</p>
-            <span class="card-subtitle mb-2">Posted by: <span id="name">{{quote.name}}</span><span id="date">on: <span
-                  id="datecolor">{{quote.datePosted|date:'short'}}</span></span></span>
+            <app-quote-details *ngIf='quote.showInformation' bind-quote='quote' (isRead)='DeleteQuote($event,i)'></app-quote-details>
+            <span class="card-subtitle mb-2">Posted by: <span id="name"> {{quote.name}}</span><span id="date"> on: <span
+                  id="datePosted">{{quote.datePosted|date:'short'}}</span></span></span>
 
           </div>
         </div>

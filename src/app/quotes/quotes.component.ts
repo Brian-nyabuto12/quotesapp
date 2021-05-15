@@ -16,13 +16,27 @@ export class QuotesComponent implements OnInit {
     new Quote (5,'sharyn','Hardwork','Hard work is an essential element in tracking down and perfecting a strategy or in executing it','Charlie Munger',new Date(2021,3,1),0,0),
     new Quote (6,'kamau','Dreams and Goals','Press forward. Do not stop, do not linger in your journey, but strive for the mark set before you','George Whitefield',new Date(2021,4,11),0,0)
   ];
-  displayInformation(index){
+  toggleDetails(index){
     this.quotes[index].showInformation = !this.quotes[index].showInformation;
   }
   get sortQuotes() {
     return this.quotes.sort((a, b) => {
       return <any>new Date(b.datePosted) - <any>new Date(a.datePosted);
     });
+  }
+  Readquote(isRead, index){
+    if (isRead) {
+      this.quotes.splice(index,1);
+    }
+  }
+  DeleteQuote(isRead, index){
+    if (isRead) {
+      let toDelete = confirm(`Are you sure you want to delete this Quote?`)
+      if(toDelete){
+        this.quotes.splice(index,1);
+      }
+      
+    }
   }
   constructor() { }
 

@@ -1,5 +1,5 @@
 import { Directive, ElementRef, HostListener } from '@angular/core';
-import { timingSafeEqual } from 'crypto';
+
 
 @Directive({
   selector: '[appQuote]'

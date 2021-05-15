@@ -10,7 +10,11 @@ export class QuoteDetailsComponent implements OnInit {
   @Input() quote: Quote;
   @Output() isRead = new EventEmitter<boolean>();
 
-  deleteQuote(read:boolean){
+  quoteRead(read:boolean){
+    this.isRead.emit(read);
+  }
+
+  quoteDelete(read:boolean){
     this.isRead.emit(read);
   }
   upvote(){
