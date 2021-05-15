@@ -4,15 +4,42 @@
     <form (ngsubmit)='addQuote() ;quotesForm.resetForm({})' #quoteForm='ngForm'>
         <div class="form-group">
             <label for="name">Your Name</label>
-            <input type="text" required class="form-control" id="name" [(ngmodel)]=quote>
+            <input type="text" required class="form-control" id="name" [(ngmodel)]="quote.name" name="name" #name='ngModel'>
             <div *ngIf="name.invalid && name.dirty" class="alert alert-danger">
                 <div *ngIf="name.errors.required">
                     Your name is required.
                 </div>
-                <div *ngIf="name.errors.minlength">
-                  Name is at least 3 characters long.
-                </div>
+               
               </div> 
         </div>
+        <div class="form-group">
+            <label for="name">Quote Title</label>
+            <input type="text" required class="form-control" id="title" [(ngModel)]="quote.title" name="title" #title='ngModel'>
+            <div *ngIf="title.invalid && title.dirty" class="alert alert-danger">
+              <div *ngIf="title.errors.required">
+                  Title is required.
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="description">Quote</label>
+            <textarea class="form-control" id="quote" rows="2" required [(ngModel)]="quote.quote" name="quote" #quote='ngModel'></textarea>
+            <div *ngIf="quote.invalid && quote.dirty" class="alert alert-danger">
+              <div *ngIf="quote.errors.required">
+                  Quote needed.
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="name">Quote Author</label>
+            <input type="text" required class="form-control" id="author"[(ngModel)]="quoted.author" name="author" #author='ngModel'>
+            <div *ngIf="title.invalid && title.dirty" class="alert alert-danger">
+              <div *ngIf="title.errors.required">
+                  Author Name is required.
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-sm btn-success">Add Quote</button>
+
     </form>
 </div>
