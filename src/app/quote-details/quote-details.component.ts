@@ -10,6 +10,7 @@ import * as EventEmitter from 'events';
 export class QuoteDetailsComponent implements OnInit {
   @Input() quote: Quote;
   @Output() isRead = new EventEmitter();
+  
     constructor() { }
 
   ngOnInit(): void {
