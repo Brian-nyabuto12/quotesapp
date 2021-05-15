@@ -1,0 +1,44 @@
+#name{
+    color:green;
+    font-weight: 700;
+  }
+  .all-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #quotes-button{
+    float: right;
+  }
+  .card{
+    margin-bottom: 2%;
+    background-color: white;
+    box-shadow:  black;
+  }
+  #date{
+    float: right;
+    font-size: 14px;
+  }
+  #datecolor{
+    color: green;
+    font-weight: 700;
+  }
+  .card-text{
+    font-family: fantasy;
+    font-weight: 570;
+    font-size: 18px;
+  }
+  h1{
+    font-family: fantasy;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    padding-bottom: 2%;
+    padding-top: 2%;
+  }
+  h4{
+    font-family: fantasy;
+  }
+  span{
+    font-family: fantasy;
+  }
