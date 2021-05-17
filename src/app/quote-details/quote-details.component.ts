@@ -10,9 +10,9 @@ export class QuoteDetailsComponent implements OnInit {
   @Input() quote: Quote;
   @Output() isRead = new EventEmitter<boolean>();
 
-  quoteRead(read:boolean){
-    this.isRead.emit(read);
-  }
+  // quoteRead(read:boolean){
+  //   this.isRead.emit(read);
+  // }
 
   quoteDelete(read:boolean){
     this.isRead.emit(read);
@@ -30,3 +30,4 @@ export class QuoteDetailsComponent implements OnInit {
   }
 
 }
+

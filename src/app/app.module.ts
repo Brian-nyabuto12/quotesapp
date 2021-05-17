@@ -8,6 +8,7 @@ import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { QuoteDirective } from './quote.directive';
 import { DatePipePipe } from './date-pipe.pipe';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -15,14 +16,15 @@ import { DatePipePipe } from './date-pipe.pipe';
     AppComponent,
     QuotesComponent,
     QuoteDetailsComponent,
-    QuoteFormComponent,
-    QuoteDirective,
+    
+QuoteDirective,
     DatePipePipe,
-  
+    QuoteFormComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule
   
   ],
   providers: [],

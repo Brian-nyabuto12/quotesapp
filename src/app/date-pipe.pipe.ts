@@ -12,7 +12,7 @@ export class DatePipePipe implements PipeTransform {
     let todayWithNotime:any = new Date(today.getFullYear(),today.getMonth())
     var dateDifference =Math.abs(todayWithNotime - value)
     const secondsInAday= 86400;
-
+    
     var dateDifferenceSeconds=dateDifference*0.001;
     var dateCounter = dateDifferenceSeconds/secondsInAday;
      if(dateCounter >= 1 && todayWithNotime > value){

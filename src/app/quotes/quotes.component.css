@@ -1,19 +1,37 @@
-#name{
+/* #name{
     color:green;
     font-weight: 700;
-  }
-  .all-cards{
-    display: flex;
+  } */
+  /* .all-cards{
+    display: inline;
     flex-wrap: wrap;
     justify-content: space-around;
-  }
-  #quotes-button{
+  } */
+  
+  /* #quote-button{
     float: right;
+    color: black;
+
   }
+  .card-columns{
+    column-count: 2;
+    
+}
+.container{
+
+  width: 100%;
+  float: left;
+}
+
+.quotes{
+  margin-top: 100px;
+ display: inline-flexbox;
+}
   .card{
-    margin-bottom: 2%;
-    background-color: white;
+     margin-bottom: 10%;
+     background-color: white;
     box-shadow:  black;
+   
   }
   #date{
     float: right;
@@ -36,9 +54,40 @@
     padding-bottom: 2%;
     padding-top: 2%;
   }
+
   h4{
     font-family: fantasy;
   }
   span{
     font-family: fantasy;
   }
+  
+  */
+  .card-title{
+    cursor: pointer;
+}
+
+.card-title:hover{
+    color: blanchedalmond; 
+    text-decoration-line: underline ;
+    
+}
+
+.card{
+    background-color: rgba(25, 41, 47,0.67);
+    color: blanchedalmond;
+    border:1px  chartreuse;
+    border-style: groove;
+    
+}
+
+.quotes{
+    margin-top: 100px;
+    color: blanchedalmond;
+    display: inline-flexbox;
+}
+
+.container{
+    width: 80%;
+    float: left;
+}
