@@ -1,6 +1,17 @@
-<!-- # Quotes
+# QuotesApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.12.
+## Author
+
+[Brian-nyabuto12](https://github.com/Brian-nyabuto12)
+
+## Description
+This is an Angular application that allows users to see the number of upvotes and number of downvotes for each quote and also they can be able to add their own quote and can also delete the quotes. 
+
+## Live Page 
+https://Owiti-charles.github.io/Quotes-app/ 
+
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.12.1.
 
 ## Development server
 
@@ -24,4 +35,32 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page. -->
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Installation / Setup instruction
+* Open Terminal {Ctrl+Alt+T}
+
+* git clone ```https://github.com/Brian-nyabuto12/Quotes-app.git```
+
+* cd Quotes-app
+
+* code . or atom . based on the text editor you have.
+
+## Technologies Used
+
+* [HTML5]
+* [CSS]
+* [AngulerCLI]
+* [Bootstrap]
+* [tyscript]
+
+## Known Bugs
+* directive property does not work properly
+
+## Contact Information 
+
+If you have any question or contributions, please email me at [brayannyabuto20@gmail.com]
+
+## License
+* *MIT License:*
+* Copyright (c) 2019 **Brian-nyabuto12 **
