@@ -8,7 +8,7 @@
 This is an Angular application that allows users to see the number of upvotes and number of downvotes for each quote and also they can be able to add their own quote and can also delete the quotes. 
 
 ## Live Page 
-https://Owiti-charles.github.io/Quotes-app/ 
+https://Brian-nyabuto12.github.io/Quotes-app/ 
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.12.1.
