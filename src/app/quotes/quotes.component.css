@@ -3,7 +3,7 @@
 }
 
 .card-title:hover{
-  color: white; 
+  color: black; 
   text-decoration-line: underline ;
   
 }
@@ -16,20 +16,30 @@
   
 }
 
+
 .quotes{
-  margin-top: 100px;
+  
+ 
   color: white;
-  display: inline-flexbox;
+  /* display:inline-flex; */
+  border-radius: 4px;
+  padding-bottom: 5%;
 }
 
 .container{
+  
   width: 100%;
   float: top left;
-}
+  justify-content: space-around;
 
+}
 
 .card-columns{
-  column-count: 2;
+  column-count: 1;
+  width: 450px;
+      padding: 20px;
+      border: 1px solid #c9c9c9;
+    
 }
-  
+
  
